@@ -1,0 +1,32 @@
+html,
+body {
+    margin: 0;
+}
+
+.main {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    color: #fff;
+    background-color: rgb(59, 40, 40);
+    font-size: 40px;
+    text-align: center;
+    grid-row: 1;
+}
+
+.content {
+    color: blue;
+    background-color: rgb(146, 66, 66);
+    grid-row: 2;
+}
+
+.footer {
+    color: #fff;
+    background-color: rgb(59, 40, 40);
+    font-size: 40px;
+    text-align: center;
+    grid-row: 3;
+}
