@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Fan base</title>
+</head>
+<body>
+    <main class="main">
+        <header class="header"><%- include('../partials/header') %></header>
+
+        <div class="content">
+            <h2>My name is <%= name %></h2>
+            <% listnames.forEach(function(user){ %>
+                <p><%= user %></p>
+              <% }); %>
+        </div>
+        <footer class="footer"><%- include('../partials/footer') %></footer>
+    </main>
+</body>
+</html>

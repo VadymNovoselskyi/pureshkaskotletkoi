@@ -21,6 +21,8 @@ body {
     color: blue;
     background-color: rgb(146, 66, 66);
     grid-row: 2;
+    text-align: center;
+    font-size: 46px;
 }
 
 .footer {
