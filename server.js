@@ -28,4 +28,7 @@ app.get('/test', function (req, res) {
         // EJS variable and server-side variable
         name, listnames
     });
+app.get('/schemas', function(req, res) {
+    res.render('schemas/sitemap')
+    })
 });
