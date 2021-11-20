@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
     var name = "Louise";
     var listnames = ["Louise", "Sadie", "Erik", "Ralph", "Gina"];
     // Render index page
-    res.render('pages/index.ejs', {
+    res.render('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley', {
         // EJS variable and server-side variable
         name, listnames
     });
