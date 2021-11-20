@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
     var name = "Louise";
     var listnames = ["Louise", "Sadie", "Erik", "Ralph", "Gina"];
     // Render index page
-    res.render('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley', {
+    res.render('pages/index.ejs', {
         // EJS variable and server-side variable
         name, listnames
     });
@@ -29,6 +29,6 @@ app.get('/test', function (req, res) {
         name, listnames
     });
 app.get('/schemas/sitemap', function(req, res) {
-    res.render('schemas/sitemap')
+    res.render('schemas/sitemap.xml')
     })
 });
