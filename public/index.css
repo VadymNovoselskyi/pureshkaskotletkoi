@@ -2,7 +2,7 @@ html,
 body {
     float: left;
     width: 100%;
-    min-height: 1000vh;
+    min-height: 100vh;
     margin: 0;
     background: url(./bg.jpeg) repeat 0 0 ;
 }
