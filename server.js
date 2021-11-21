@@ -10,7 +10,7 @@ app.use(express.static('public'));
 // Set the view engine to ejs
 app.set('views engine', 'ejs');
 // Port website will run on
-app.listen(8080);
+const PORT = process.env.PORT || 5000;
 // Route Route
 app.get('/', function (req, res) {
     var name = "Louise";
