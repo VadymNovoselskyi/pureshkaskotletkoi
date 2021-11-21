@@ -1,16 +1,14 @@
 // Load Node modules
 var express = require('express');
-var xml = require('xml');
-
 const ejs = require('ejs');
 // Initialise Express
 var app = express();
 // Render static files
 app.use(express.static('public'));
 // Set the view engine to ejs
-app.set('views engine', 'ejs');
+app.set('view engine', 'ejs');
 // Port website will run on
-const PORT = process.env.PORT || 5000;
+app.listen(process.env.PORT);
 // Route Route
 app.get('/', function (req, res) {
     var name = "Louise";
@@ -30,8 +28,4 @@ app.get('/test', function (req, res) {
         // EJS variable and server-side variable
         name, listnames
     });
-});
-app.get('/sitemap.xml', function(req, res) {
-    res.setHeader('Content-type', 'text/xml');
-    res.render('sitemap')
 });
