@@ -8,6 +8,7 @@ app.use(express.static('public'));
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
 // Port website will run on
+/* app.listen(5050); */
 app.listen(process.env.PORT);
 // Route Route
 app.get('/', function (req, res) {
